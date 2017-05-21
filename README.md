@@ -1,6 +1,11 @@
 # maila-dev
 
-> 麦啦开发者后台
+> 管理端后台  
+###后台ui可以采用element ui 或者iview  
+### 采用技术栈 vue2.0全家桶（vue2.0 vue-router2.0 axios vee-validator ）  
+### webpack 配置基于官方vue-cli改造  
+### mock文件存放json文件及接口文件用于本地制造假数据  
+### 采用vue-markdown-loader解析markdown文件
 
 ## Build Setup
 
