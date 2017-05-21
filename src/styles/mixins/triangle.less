@@ -1,0 +1,20 @@
+.bottom-triangle(@padding-left) {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+  }
+
+  &::before {
+    border: 6px solid transparent;
+    border-bottom-color: #d5d5d5;
+    left: @padding-left;
+  }
+
+  &::after {
+    border: 5px solid transparent;
+    border-bottom-color: #f7f6f2;
+    left: @padding-left + 1;
+  }
+}

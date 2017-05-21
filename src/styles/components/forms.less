@@ -1,0 +1,317 @@
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+
+  &:focus {
+    outline: 0;
+    border-color: #a8e7e7;
+    + .unit {
+      border-color: #a8e7e7;
+    }
+  }
+}
+.form-control-dirty.invalid {
+  border: 1px solid #F66B4E;
+}
+
+.control-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  line-height: 34px;
+  width: 90px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.label-required::before {
+  content: '*';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  color: red;
+  margin-right: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  max-width: 950px;
+  position: relative;
+  padding-left: 106px;
+  .clearfix();
+
+  p.invalid {
+    color: #F66B4E;
+    font-size: 12px;
+    margin-top: 8px;
+
+    .iconhandle {
+      font-size: 14px;
+    }
+  }
+
+  .form-group-tip {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #888;
+    margin: 8px 0;
+
+    > a {
+      color: @green;
+      text-decoration: underline;
+    }
+  }
+
+  .switch {
+    float: left;
+    margin: 6px 10px 0 0;
+  }
+
+  .switch-tip {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.5;
+    display: table;
+    height: 34px;
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .form-inline-tip {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #888;
+  }
+
+  .form-text {
+    font-size: 14px;
+    line-height: 34px;
+
+    a {
+      color: @green;
+    }
+
+    .btn {
+      color: #444;
+    }
+  }
+}
+.bottomline {
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #d8d8d8;
+}
+.bottom-tri-line {
+  position: relative;
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 15px;
+
+  .bottom-triangle(20px);
+}
+
+.form-control-static {
+  line-height: 34px;
+}
+
+.input-group {
+  position: relative;
+  padding-right: 80px;
+  .form-control {
+    border-radius: 2px 0 0 2px;
+  }
+  .unit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 79px;
+    border: 1px solid #ccc;
+    height: 32px;
+    border-radius: 0 2px 2px 0;
+    background: #fff;
+    font-size: 14px;
+    color: #444444;
+    line-height: 32px;
+    text-align: center;
+    border-left: 0;
+  }
+}
+
+.form-inline {
+  .clearfix();
+  
+  .select-group,
+  .checkbox-control,
+  .form-control {
+    margin-right: 10px;
+    float: left;
+  }
+
+  .form-control {
+    display: inline-block;
+    width: 280px;
+  }
+}
+
+// radios
+.radios {
+  label {
+    line-height: 34px;
+    margin-right: 30px;
+    font-size: 14px;
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+
+    input {
+      margin-right: 10px;
+      height: 16px;
+      vertical-align: middle;
+      position: absolute;
+      left: 0;
+      top: 9px;
+    }
+  }
+
+  &.bottomline-radio {
+    border-bottom: 1px solid #d5d5d5;
+
+    label.active {
+      padding-bottom: 10px;
+
+      .bottom-triangle(30px);
+    }
+  }
+}
+
+.form-control-tip {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin-top: 15px;
+
+  a {
+    color: #15c8c0;
+    text-decoration: underline;
+  }
+}
+
+.form-groups-chunk {
+  margin-top: 20px;
+  border-bottom: 1px dashed #d8d8d8;
+  max-width: 950px;
+
+  h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+}
+
+// input with addon
+.input-with-addon {
+  width: 100%;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+
+  .form-control,
+  .input-group-addon {
+    display: table-cell;
+  }
+
+  .form-control {
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+  }
+
+  .input-group-addon {
+    width: 1%;
+    white-space: nowrap;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 2px 2px 0;
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .select-addon {
+    padding: 0 10px;
+
+    .iconhandle {
+      font-size: 14px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 90;
+    }
+  }
+
+  .select-control {
+    position: relative;
+    width: 85px;
+    height: 32px;
+    border: 0;
+    background-color: #fff;
+    font-size: 14px;
+    outline: 0;
+    -webkit-appearance: inherit;
+    -moz-appearance: inherit;
+  }
+}
+
+// radio group
+.radio-group {
+  font-size: 14px;
+
+  &.bottomline-radio {
+    border-bottom: 1px solid #d5d5d5;
+
+    .radio-label.active {
+      padding-bottom: 10px;
+
+      .bottom-triangle(30px);
+    }
+  }
+
+  .radio-label {
+    margin-right: 40px;
+    display: inline-block;
+    line-height: 34px;
+    position: relative;
+  }
+
+  .radio-control {
+    margin-right: 5px;
+  }
+}
+
+// 省市区选择
+.region-picker {
+  select {
+    width: 204px;
+    line-height: 34px;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+    margin-right: 10px;
+    background-color: #fff;
+  }
+}
+

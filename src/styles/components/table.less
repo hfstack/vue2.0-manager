@@ -1,0 +1,249 @@
+.tr-header {
+  line-height: 30px;
+  height: 30px;
+  background: #e8e7e2;
+  color: #333;
+  font-size: 12px;
+  width: 100%;
+
+  th {
+    font-weight: normal;
+    text-align: left;
+
+    &:first-child {
+      padding-left: 22px;
+    }
+  }
+}
+
+.tr-items {
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+  width: 100%;
+  color: #444;
+  font-size: 12px;
+  vertical-align: middle;
+
+  td:first-child {
+    padding-left: 22px;
+  }
+
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    background: #f6fcfc;
+  }
+
+  a {
+    color: #29b6b0;
+    text-decoration: underline;
+  }
+
+  .iconhandle,
+  .iconnav {
+    color: #bbb;
+    text-decoration: none;
+
+    &.delete:hover {
+      color: #ff795c;
+    }
+  }
+}
+
+.td-actions {
+  width: 170px;
+
+  a {
+    margin-right: 10px;
+
+    &:hover {
+      color: #29b6b0;
+    }
+
+    &.disable {
+      color: #eee;
+      cursor: not-allowed;
+    }
+  }
+
+  p {
+    position: relative;
+  }
+}
+
+.table-header-tip {
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+// 活动订单类似的table
+.table-header {
+  margin-top: 20px;
+  overflow: hidden;
+
+  > li {
+    float: left;
+    width: 16.66%;
+    text-align: center;
+    line-height: 16px;
+    padding: 6px 0;
+    background: #e8e7e2;
+    font-size: 12px;
+
+    span {
+      display: block;
+      border-right: 1px solid #ccc;
+    }
+
+    &:last-child span {
+      border-right: 0;
+    }
+  }
+}
+
+.table-row {
+  background: #fff;
+  margin: 20px 0;
+}
+
+.row-header {
+  padding: 5px 10px;
+  background: #fcfcfa;
+  border-top: 1px solid #ebebeb;
+
+  .order-info {
+    color: #888;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 24px;
+    margin-right: 20px;
+
+    span {
+      color: #444;
+    }
+  }
+}
+
+.row-items {
+  padding: 20px 0;
+  display: table;
+  width: 100%;
+
+  li {
+    display: table-cell;
+    width: 16.66%;
+    text-align: center;
+    font-size: 12px;
+    max-height: 40px;
+    box-sizing: border-box;
+    padding: 0 25px;
+    vertical-align: middle;
+    border-right: 1px dotted #e3e3e3;
+    &:last-child{
+      border-right: 0;
+    }
+    span {
+      line-height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      word-wrap:break;
+      word-break:break-all;
+    }
+  }
+}
+
+.column4 {
+  li {
+    width: 25%;
+  }
+}
+
+.column7 {
+  li {
+    width: 14%;
+  }
+}
+
+// 集市表单图片和商品信息
+.table-goods,
+.table-activity {
+  .td-title,
+  .td-desc {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 240px;
+  }
+
+  .tr-items:hover .td-title {
+    font-weight: bold;
+  }
+  .tr-items{
+    .tag {
+      background: #71C4E2;
+      color: #fff;
+      padding: 3px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+  }
+
+  .td-desc {
+    color: #888;
+    margin-top: 12px;
+
+    .iconnav {
+      display: inline;
+      font-size: 13px;
+      color: #ff9d60;
+      margin-right: 5px;
+    }
+  }
+
+  .goods-check {
+    width: 40px;
+  }
+}
+
+.table-activity {
+  margin-top: 20px;
+
+  img {
+    width: 137px;
+    height: 60px;
+  }
+
+  .activity-img {
+    width: 170px;
+  }
+
+  .activity-info {
+    width: 280px;
+  }
+}
+
+.table-goods {
+  margin-top: 20px;
+
+  img {
+    width: 96px;
+    height: 60px;
+  }
+
+  .goods-img {
+    width: 130px;
+  }
+
+  .td-desc {
+    color: #333;
+  }
+
+  .coupon-info {
+    width: 280px;
+  }
+}
+

@@ -1,0 +1,211 @@
+.image-upload-container {
+  .img {
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+
+    img {
+      opacity: 0;
+    }
+  }
+
+  .img-uploaded {
+    img {
+      display: block;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  &.w-100-h-100,
+  &.w-250-h-250,
+  &.w-640-h-300,
+  &.w-225-h-140,
+  &.account-imageupload {
+    .img > p {
+      background: #d8d8d8 url('../../assets/images/appicon_lg.png') no-repeat center center;
+    }
+
+    img {
+      height: 120px;
+    }
+
+    .upload-area {
+      height: 132px;
+    }
+  }
+
+  &.account-imageupload {
+    width: 170px;
+    display: inline-block;
+
+    .img > p {
+      position: relative;
+      width: 170px;
+      height: 120px;
+    }
+
+    .file-upload {
+      width: 170px;
+      height: 120px;
+    }
+
+    h3 {
+      clear: both;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.5;
+      padding-top: 10px;
+    }
+  }
+
+  &.showcase-upload-big {
+    .img > p {
+      width: 140px;
+      background: #d8d8d8 url('../../assets/images/appicon_lg.png') no-repeat center center;
+    }
+
+    img {
+      height: 93px;
+    }
+
+    .upload-area {
+      height: 105px;
+    }
+  }
+
+  &.showcase-upload-small {
+    .img > p {
+      width: 189px;
+      background: #d8d8d8 url('../../assets/images/appicon_lg.png') no-repeat center center;
+    }
+
+    img {
+      height: 64px;
+    }
+
+    .upload-area {
+      height: 76px;
+    }
+  }
+
+  &.w-100-h-100{
+    .img > p {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &.w-250-h-250{
+    .img > p {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  &.w-250-h-250 {
+    .upload-area {
+      height: 100px;
+    }
+    img {
+      height: 90px;
+    }
+  }
+
+  &.w-640-h-280 {
+    .img > p {
+      width: 257px;
+      height: 112px;
+      background: #d8d8d8 url('../../assets/images/appicon_lg.png') no-repeat center center;
+    }
+
+    img {
+      height: 112px;
+    }
+
+    .upload-area {
+      height: 124px;
+    }
+  }
+
+  &.w-640-h-300 {
+    .img > p {
+      width: 257px;
+      height: 120px;
+    }
+  }
+
+  &.w-225-h-140 {
+    .img > p {
+      width: 199px;
+      height: 120px;
+    }
+  }
+
+  &.category-100-100 {
+    .img > p {
+      width: 80px;
+      height: 80px;
+      background: #d8d8d8 url('../../assets/images/appicon.png') no-repeat center center;
+    }
+
+    img {
+      height: 80px;
+    }
+
+    .upload-area {
+      height: 92px;
+    }
+  }
+
+  .upload-area {
+    display: table;
+    padding-left: 20px;
+
+    p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #888;
+    }
+  }
+
+  .upload-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .psd-link {
+    display: block;
+    color: #29b6b0;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .example-link {
+    color: #29b6b0;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .upload-btn {
+    position: relative;
+  }
+
+  .file-upload {
+    width: 78px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .invalid {
+    color: #ffc4b8;
+    font-size: 12px;
+    margin: 10px 0 0 15px;
+  }
+
+  .tip {
+    line-height: 1.5;
+  }
+}

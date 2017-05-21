@@ -1,0 +1,88 @@
+.pagination {
+  overflow: hidden;
+  background-color: #e8e7e2;
+  line-height: 28px;
+  padding: 8px 20px;
+
+  .total-count {
+    float: left;
+    font-size: 14px;
+  }
+
+  .pagination-list {
+    float: right;
+    margin-top: 5px;
+
+    li {
+      float: left;
+    }
+  }
+
+  .num {
+    display: block;
+    padding: 0 6px;
+    min-width: 12px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    color: #444;
+    font-size: 12px;
+    margin-right: 8px;
+
+    &:hover {
+      border-color: #888;
+    }
+
+    &.disable {
+      background-color: #f4f4f4;
+      cursor: not-allowed;
+      color: #d8d8d8;
+
+      &:hover,
+      & {
+        border-color: #ececec;
+      }
+    }
+
+    &.selected {
+      background-color: #444;
+      color: #fff;
+
+      &,
+      &:hover {
+        border-color: #444;
+      }
+    }
+  }
+
+  .point {
+    padding: 0 8px;
+    margin-right: 8px;
+    display: block;
+    line-height: 30px;
+    position: relative;
+    top: -7px;
+  }
+}
+
+.lottery {
+  float: left;
+  font-size: 14px;
+  color: #888;
+  line-height: 34px;
+}
+.batch-action {
+  float: left;
+  font-size: 14px;
+  color: #888;
+  line-height: 34px;
+
+  .checkbox-control {
+    float: left;
+  }
+
+  .btn {
+    margin-left: 10px;
+  }
+}
