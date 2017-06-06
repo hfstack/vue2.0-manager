@@ -1,5 +1,3 @@
-# maila-dev
-
 > 管理端后台  
 后台ui可以采用element ui 或者iview  
 ### 采用技术栈 vue2.0全家桶（vue2.0 vue-router2.0 axios vee-validator vuex ）  
