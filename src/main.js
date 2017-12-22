@@ -8,20 +8,21 @@ import VueAxios from 'vue-axios'
 import store from './store'
 import './styles/main.less'
 import initComponents from './initComponents'
-import VeeValidate, { Validator } from 'vee-validate'
+import VeeValidate from 'vee-validate'
 import messages from 'components/utils/zh_CN'
 initComponents(Vue)
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
-Validator.updateDictionary({
-  zh_CN: {
-    messages
-  }
-})
 const config = {
   errorBagName: 'verrors', // change if property conflicts.
   delay: 0,
   locale: 'zh_CN',
+  dictionary: {
+    zh_CN: {
+      messages
+    }
+  },
+  events: 'blur',
   messages: null,
   strict: true
 }
